@@ -1,10 +1,12 @@
 .nav {
-  display: flex;
-  justify-content: flex-end;
-  display: -webkit-flex; 
-  -webkit-justify-content: flex-end;
+  display: flex; 
+  justify-content: flex-start;
+  display: -webkit-flex;
+  -webkit-justify-content: flex-start;
   background: #008aff;
-}
+  border-radius: 5px 0 0 5px;
+  }
+ 
 .nav__link {
   font-size: 15px;
   color: #fff;
@@ -15,33 +17,79 @@
 .nav__link:hover {
   background: #A9A9A9;
 }
+.nav__link__btn {
+  width: 50px;
+  height: 50px;
+  background: #B0C4DE;
+  border-radius: 5px;
+  }
 @media (min-width:320px) { /* smartphones, iPhone, portrait 480x320 phones */ 
 	.nav__link {
-		font-size: 16px; 
-	}
-}
+	  font-size: 16px;
+    }
+  .nav {
+    right: -329px;
+    position: absolute;
+    transition: right 2s ease-in-out;
+    }
+  .nav:hover {
+    right: 0;
+    }
+  }
 @media (min-width:481px) { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
-.nav__link {
+  .nav__link {
 		font-size: 25px; 
-	}
-}
+	  }
+  .nav {
+    right: -329px;
+    position: absolute;
+    transition: right 2s ease-in-out;
+    }
+  .nav:hover {
+    right: 0;
+    }
+  }
 @media (min-width:641px) { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
-.nav__link {
+  .nav__link {
 		font-size: 30px; 
-	}
-}
+	  }
+  .nav {
+    right: -500px;
+    position: absolute;
+    transition: right 2s ease-in-out;
+    }
+  .nav:hover {
+    right: 0;
+    }
+  }
 @media (min-width:961px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
-.nav__link {
+  .nav__link {
 		font-size: 35px; 
-	}
-}
+	  }
+  .nav {
+    right: -590px;
+    position: absolute;
+    transition: right 2s ease-in-out;
+    }
+  .nav:hover {
+    right: 0;
+    }
+  }
 @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
-.nav__link {
+  .nav__link {
 		font-size: 40px; 
-	}
-}
+	  }
+  .nav {
+    position: absolute;
+    left: 30px;
+    }
+  }
 @media (min-width:1281px) { /* hi-res laptops and desktops */ 
-.nav__link {
+  .nav__link {
 		font-size: 45px; 
-	}
-}
+	  }
+  .nav {
+    position: absolute;
+    left: 30px;
+    }
+  }
