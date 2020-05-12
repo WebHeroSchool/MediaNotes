@@ -1,0 +1,137 @@
+.nav {
+  width: 100%;
+  height: 40px;
+  background: #1756E8;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  font-family: 'Playfair Display', serif;
+    
+}
+.nav__list {
+  width: 800px;
+    height: 40px;
+}
+.item {
+  display: inline;
+  float: left;
+}
+.link  {
+  width: 100px;
+  padding: 10px 5px 15px 5px;
+  text-align: center;
+    text-decoration: none;
+    color: #FBFCFE;
+    display: inline-block;
+}
+.link:hover {
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 5px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+  animation: animate .5s 1 reverse linear;
+}
+@keyframes animate {
+  from {
+    transform: translateX(0px);
+    }
+    to{
+    transform: translateX(5px);
+    }
+}
+.link__btn {
+    display: none;
+    width: 30px;
+    height: 15px;
+    background: #3214D2;
+    border-radius: 5px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+    align-items: center;
+    justify-content: center;
+}
+.line {
+  position: relative;
+  width: 80%;
+    height: 2px;
+    background: #FCFBFE;
+    }
+ .line:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 4px;
+    left: 0;
+  background: #FCFBFE;
+  }
+.line:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: -4px;
+    left: 0;
+    background: #FCFBFE;
+  }
+@media (max-width: 640px) {
+  .nav__list {
+    display: none;
+  }
+  .link__btn {
+      display: flex;
+    }
+   .nav {
+    border-radius: 5px;
+    }
+    .link {
+    transition-duration: 2s;
+    transition-property: background-color;
+    transition-timing-function: linear;
+    }
+    .link:hover {
+  animation: none;
+  background-color: rgba(255,255,255,0.5);
+    }
+    
+}
+@media (max-width: 480px) {
+  .nav__list {
+    display: none;
+  }
+  .link__btn {
+    display: flex;
+  }
+  .nav {
+    border-radius: 5px;
+   }
+   .link {
+    transition-duration: 2s;
+    transition-property: background-color;
+    transition-timing-function: linear;
+    }
+    .link:hover {
+  animation: none;
+  background-color: rgba(255,255,255,0.5);
+    }
+}
+@media (max-width: 320px) {
+  .nav__list {
+    display: none;
+  }
+  .link__btn {
+    display: flex ;
+  }
+  .nav {
+    border-radius: 5px;
+   }
+   .link {
+    transition-duration: 2s;
+    transition-property: background-color;
+    transition-timing-function: linear;
+    }
+    .link:hover {
+  animation: none;
+  background-color: rgba(255,255,255,0.5);
+    }
+}
